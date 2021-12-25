@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd src/
+nohup python -m http.server &
+nohup flask run &

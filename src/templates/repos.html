@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="../static/images/gh.png" />
+    <title>Recommendations</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        height: 100vh;
+        background: #1b1717;
+      }
+
+      .bar {
+        /* width: 100vw; */
+        height: 5vh;
+        text-align: center;
+        background-color: #1b1717;
+        padding: 10px;
+        padding-top: 1vh;
+        font-size: xx-large;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: 500;
+        color: #eeebdd;
+      }
+
+      .repo {
+        background: #810000;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        background: #eeebdd;
+        border: 1px solid #eeebdd;
+        border-radius: 10px;
+        padding: 10px;
+        color: #1b1717;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      h2 {
+        color: #eeebdd;
+      }
+
+      a {
+        color: blue;
+        padding-bottom: 3px;
+        border-bottom: 1px solid blue;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div name="appbar" class="bar">Recommendations for {{name}}</div>
+    <div>
+      <li class="repo">
+        <h2 style="text-transform: uppercase">
+          {{repo[0]["Repository Name"]}}
+        </h2>
+        <br />
+        <div class="content">
+          Repo Owner: {{repo[0]["Username"]}}<br />
+          Repo Description: {{repo[0]["Description"]}}<br />
+          Primary Language: {{repo[0]["Language"]}}<br />
+          Tags: {{repo[0]["Tags"]}}<br />
+          <span
+            >Link:
+            <a href="{{repo[0]['Url']}}" target="blank"
+              >{{repo[0]["Url"]}}</a
+            ></span
+          >
+        </div>
+      </li>
+      <li class="repo">
+        <h2 style="text-transform: uppercase">
+          {{repo[1]["Repository Name"]}}
+        </h2>
+        <br />
+        <div class="content">
+          Repo Owner: {{repo[1]["Username"]}}<br />
+          Repo Description: {{repo[1]["Description"]}}<br />
+          Primary Language: {{repo[1]["Language"]}}<br />
+          Tags: {{repo[1]["Tags"]}}<br />
+          <span
+            >Link:
+            <a href="{{repo[1]['Url']}}" target="blank"
+              >{{repo[1]["Url"]}}</a
+            ></span
+          >
+        </div>
+      </li>
+      <li class="repo">
+        <h2 style="text-transform: uppercase">
+          {{repo[2]["Repository Name"]}}
+        </h2>
+        <br />
+        <div class="content">
+          Repo Owner: {{repo[2]["Username"]}}<br />
+          Repo Description: {{repo[2]["Description"]}}<br />
+          Primary Language: {{repo[2]["Language"]}}<br />
+          Tags: {{repo[2]["Tags"]}}<br />
+          <span
+            >Link:
+            <a href="{{repo[2]['Url']}}" target="blank"
+              >{{repo[2]["Url"]}}</a
+            ></span
+          >
+        </div>
+      </li>
+      <li class="repo">
+        <h2 style="text-transform: uppercase">
+          {{repo[3]["Repository Name"]}}
+        </h2>
+        <br />
+        <div class="content">
+          Repo Owner: {{repo[3]["Username"]}}<br />
+          Repo Description: {{repo[3]["Description"]}}<br />
+          Primary Language: {{repo[3]["Language"]}}<br />
+          Tags: {{repo[3]["Tags"]}}<br />
+          <span
+            >Link:
+            <a href="{{repo[3]['Url']}}" target="blank"
+              >{{repo[3]["Url"]}}</a
+            ></span
+          >
+        </div>
+      </li>
+      <li class="repo">
+        <h2 style="text-transform: uppercase">
+          {{repo[4]["Repository Name"]}}
+        </h2>
+        <br />
+        <div class="content">
+          Repo Owner: {{repo[4]["Username"]}}<br />
+          Repo Description: {{repo[4]["Description"]}}<br />
+          Primary Language: {{repo[4]["Language"]}}<br />
+          Tags: {{repo[4]["Tags"]}}<br />
+          <span
+            >Link:
+            <a href="{{repo[4]['Url']}}" target="blank"
+              >{{repo[4]["Url"]}}</a
+            ></span
+          >
+        </div>
+      </li>
+      <li class="repo">
+        <h2 style="text-transform: uppercase">
+          {{repo[5]["Repository Name"]}}
+        </h2>
+        <br />
+        <div class="content">
+          Repo Owner: {{repo[5]["Username"]}}<br />
+          Repo Description: {{repo[5]["Description"]}}<br />
+          Primary Language: {{repo[5]["Language"]}}<br />
+          Tags: {{repo[5]["Tags"]}}<br />
+          <span
+            >Link:
+            <a href="{{repo[5]['Url']}}" target="blank"
+              >{{repo[5]["Url"]}}</a
+            ></span
+          >
+        </div>
+      </li>
+      <li class="repo">
+        <h2 style="text-transform: uppercase">
+          {{repo[6]["Repository Name"]}}
+        </h2>
+        <br />
+        <div class="content">
+          Repo Owner: {{repo[6]["Username"]}}<br />
+          Repo Description: {{repo[6]["Description"]}}<br />
+          Primary Language: {{repo[6]["Language"]}}<br />
+          Tags: {{repo[6]["Tags"]}}<br />
+          <span
+            >Link:
+            <a href="{{repo[6]['Url']}}" target="blank"
+              >{{repo[6]["Url"]}}</a
+            ></span
+          >
+        </div>
+      </li>
+      <li class="repo">
+        <h2 style="text-transform: uppercase">
+          {{repo[7]["Repository Name"]}}
+        </h2>
+        <br />
+        <div class="content">
+          Repo Owner: {{repo[7]["Username"]}}<br />
+          Repo Description: {{repo[7]["Description"]}}<br />
+          Primary Language: {{repo[7]["Language"]}}<br />
+          Tags: {{repo[7]["Tags"]}}<br />
+          <span
+            >Link:
+            <a href="{{repo[7]['Url']}}" target="blank"
+              >{{repo[7]["Url"]}}</a
+            ></span
+          >
+        </div>
+      </li>
+      <li class="repo">
+        <h2 style="text-transform: uppercase">
+          {{repo[8]["Repository Name"]}}
+        </h2>
+        <br />
+        <div class="content">
+          Repo Owner: {{repo[8]["Username"]}}<br />
+          Repo Description: {{repo[8]["Description"]}}<br />
+          Primary Language: {{repo[8]["Language"]}}<br />
+          Tags: {{repo[8]["Tags"]}}<br />
+          <span
+            >Link:
+            <a href="{{repo[8]['Url']}}" target="blank"
+              >{{repo[8]["Url"]}}</a
+            ></span
+          >
+        </div>
+      </li>
+      <li class="repo">
+        <h2 style="text-transform: uppercase">
+          {{repo[9]["Repository Name"]}}
+        </h2>
+        <br />
+        <div class="content">
+          Repo Owner: {{repo[9]["Username"]}}<br />
+          Repo Description: {{repo[9]["Description"]}}<br />
+          Primary Language: {{repo[9]["Language"]}}<br />
+          Tags: {{repo[9]["Tags"]}}<br />
+          <span
+            >Link:
+            <a href="{{repo[9]['Url']}}" target="blank"
+              >{{repo[9]["Url"]}}</a
+            ></span
+          >
+        </div>
+      </li>
+      <li class="repo">
+        <h2 style="text-transform: uppercase">
+          {{repo[10]["Repository Name"]}}
+        </h2>
+        <br />
+        <div class="content">
+          Repo Owner: {{repo[10]["Username"]}}<br />
+          Repo Description: {{repo[10]["Description"]}}<br />
+          Primary Language: {{repo[10]["Language"]}}<br />
+          Tags: {{repo[10]["Tags"]}}<br />
+          <span
+            >Link:
+            <a href="{{repo[10]['Url']}}" target="blank"
+              >{{repo[10]["Url"]}}</a
+            ></span
+          >
+        </div>
+      </li>
+      <li class="repo">
+        <h2 style="text-transform: uppercase">
+          {{repo[11]["Repository Name"]}}
+        </h2>
+        <br />
+        <div class="content">
+          Repo Owner: {{repo[11]["Username"]}}<br />
+          Repo Description: {{repo[11]["Description"]}}<br />
+          Primary Language: {{repo[11]["Language"]}}<br />
+          Tags: {{repo[11]["Tags"]}}<br />
+          <span
+            >Link:
+            <a href="{{repo[11]['Url']}}" target="blank"
+              >{{repo[11]["Url"]}}</a
+            ></span
+          >
+        </div>
+      </li>
+      <li class="repo">
+        <h2 style="text-transform: uppercase">
+          {{repo[12]["Repository Name"]}}
+        </h2>
+        <br />
+        <div class="content">
+          Repo Owner: {{repo[12]["Username"]}}<br />
+          Repo Description: {{repo[12]["Description"]}}<br />
+          Primary Language: {{repo[12]["Language"]}}<br />
+          Tags: {{repo[12]["Tags"]}}<br />
+          <span
+            >Link:
+            <a href="{{repo[12]['Url']}}" target="blank"
+              >{{repo[12]["Url"]}}</a
+            ></span
+          >
+        </div>
+      </li>
+      <li class="repo">
+        <h2 style="text-transform: uppercase">
+          {{repo[13]["Repository Name"]}}
+        </h2>
+        <br />
+        <div class="content">
+          Repo Owner: {{repo[13]["Username"]}}<br />
+          Repo Description: {{repo[13]["Description"]}}<br />
+          Primary Language: {{repo[13]["Language"]}}<br />
+          Tags: {{repo[13]["Tags"]}}<br />
+          <span
+            >Link:
+            <a href="{{repo[13]['Url']}}" target="blank"
+              >{{repo[13]["Url"]}}</a
+            ></span
+          >
+        </div>
+      </li>
+      <li class="repo">
+        <h2 style="text-transform: uppercase">
+          {{repo[14]["Repository Name"]}}
+        </h2>
+        <br />
+        <div class="content">
+          Repo Owner: {{repo[14]["Username"]}}<br />
+          Repo Description: {{repo[14]["Description"]}}<br />
+          Primary Language: {{repo[14]["Language"]}}<br />
+          Tags: {{repo[14]["Tags"]}}<br />
+          <span>
+            Link:
+            <a href="{{repo[14]['Url']}}" target="blank">{{repo[14]["Url"]}}</a>
+          </span>
+        </div>
+      </li>
+    </div>
+    <script></script>
+  </body>
+</html>
